@@ -28,6 +28,21 @@ return packer.startup({
   function(use)
     -- Packer can manage itself
     use('wbthomason/packer.nvim')
+    use('nvim-lua/plenary.nvim') -- utility functions used by other plugins
+
+    use({
+      'kyazdani42/nvim-web-devicons',
+      event = 'VimEnter',
+    })
+
+    --color scheme
+    use({
+      'RRethy/nvim-base16',
+      config = function()
+        require('vima.plugins.colorscheme')
+      end,
+      event = 'VimEnter',
+    })
 
     -- Automatically set up your configuration after cloning packer.nvim
     if PACKER_BOOTSTRAP then
