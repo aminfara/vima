@@ -28,8 +28,9 @@ return packer.startup({
   function(use)
     -- Packer can manage itself
     use('wbthomason/packer.nvim')
-    use('nvim-lua/plenary.nvim') -- utility functions used by other plugins
-
+    -- utility functions used by other plugins
+    use('nvim-lua/plenary.nvim')
+    -- icons used by other plugins
     use({
       'kyazdani42/nvim-web-devicons',
       event = 'VimEnter',
@@ -40,6 +41,15 @@ return packer.startup({
       'RRethy/nvim-base16',
       config = function()
         require('vima.plugins.colorscheme')
+      end,
+      event = 'VimEnter',
+    })
+
+    -- which-key shows possible keys
+    use({
+      'folke/which-key.nvim',
+      config = function()
+        require('vima.plugins.whichkey')
       end,
       event = 'VimEnter',
     })
