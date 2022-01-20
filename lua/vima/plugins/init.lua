@@ -49,8 +49,7 @@ return packer.startup({
     use({
       'rcarriga/nvim-notify',
       config = function()
-        -- redirect all notifications to this module
-        vim.notify = require('notify')
+        require('vima.plugins.vim-notify')
       end,
       after = 'nvim-base16',
     })
@@ -62,6 +61,15 @@ return packer.startup({
         require('vima.plugins.whichkey')
       end,
       event = 'VimEnter',
+    })
+
+    -- telescope fuzzy finder
+    use({
+      'nvim-telescope/telescope.nvim',
+      config = function()
+        require('vima.plugins.telescope')
+      end,
+      after = { 'which-key.nvim' },
     })
 
     -- Automatically set up your configuration after cloning packer.nvim

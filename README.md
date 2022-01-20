@@ -9,6 +9,7 @@ My attempt to setup Neovim for python and typescript development.
 - [nvim-base16](https://github.com/RRethy/nvim-base16) colorscheme (automatically pick [base16-shell](https://github.com/chriskempson/base16-shell) selected scheme)
 - [which-key.nvim](https://github.com/folke/which-key.nvim) show keybindings
 - [nvim-notify](https://github.com/rcarriga/nvim-notify) notification boxes
+- [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) fuzzy finder
 
 ## To be added
 
@@ -34,7 +35,6 @@ My attempt to setup Neovim for python and typescript development.
 - ray-x/lsp_signature.nvim
 - williamboman/nvim-lsp-installer
 - jose-elias-alvarez/null-ls.nvim
-- nvim-telescope/telescope.nvim
 - windwp/nvim-autopairs
 - numToStr/Comment.nvim
 - akinsho/bufferline.nvim
