@@ -17,7 +17,7 @@ if not present then
   present, packer = pcall(require, 'packer')
 
   if present then
-    print('Packer installed successfully.')
+    vim.notify('Packer installed successfully.')
   else
     error('Could not bootstrap packer!')
     return false
@@ -49,7 +49,7 @@ return packer.startup({
     use({
       'rcarriga/nvim-notify',
       config = function()
-        require('vima.plugins.vim-notify')
+        require('vima.plugins.nvim-notify')
       end,
       after = 'nvim-base16',
     })
@@ -60,7 +60,7 @@ return packer.startup({
       config = function()
         require('vima.plugins.whichkey')
       end,
-      event = 'VimEnter',
+      after = 'nvim-notify',
     })
 
     -- telescope fuzzy finder

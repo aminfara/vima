@@ -1,6 +1,6 @@
 local present, which_key = pcall(require, 'which-key')
 if not present then
-  vim.notify('Failed to load which-key.', 'warn', { title = 'which-key' })
+  require('vima.utils').notify_missing_plugin('which-key.nvim')
   return
 end
 

@@ -1,6 +1,6 @@
 local present, telescope = pcall(require, 'telescope')
 if not present then
-  vim.notify('Failed to load telescope.nvim.', 'warn', { title = 'telescope.nvim' })
+  require('vima.utils').notify_missing_plugin('telescope.nvim')
   return
 end
 
