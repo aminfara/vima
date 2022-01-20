@@ -45,6 +45,16 @@ return packer.startup({
       event = 'VimEnter',
     })
 
+    -- notifications
+    use({
+      'rcarriga/nvim-notify',
+      config = function()
+        -- redirect all notifications to this module
+        vim.notify = require('notify')
+      end,
+      after = 'nvim-base16',
+    })
+
     -- which-key shows possible keys
     use({
       'folke/which-key.nvim',

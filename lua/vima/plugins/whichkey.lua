@@ -1,6 +1,6 @@
 local present, which_key = pcall(require, 'which-key')
 if not present then
-  vim.notify('Failed to load which-key.')
+  vim.notify('Failed to load which-key.', 'warn', { title = 'which-key' })
   return
 end
 

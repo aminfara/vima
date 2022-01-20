@@ -5,15 +5,14 @@ My attempt to setup Neovim for python and typescript development.
 ## Features
 
 - Enhanced neovim options
-- [packer.nvim](https://github.com/wbthomason/packer.nvim)
+- [packer.nvim](https://github.com/wbthomason/packer.nvim) plugin management
 - [nvim-base16](https://github.com/RRethy/nvim-base16) colorscheme (automatically pick [base16-shell](https://github.com/chriskempson/base16-shell) selected scheme)
-- [which-key.nvim](https://github.com/folke/which-key.nvim)
+- [which-key.nvim](https://github.com/folke/which-key.nvim) show keybindings
+- [nvim-notify](https://github.com/rcarriga/nvim-notify) notification boxes
 
 ## To be added
 
 - nvim-lua/popup.nvim
-- Tastyep/structlog.nvim
-- rcarriga/nvim-notify
 - nvim-treesitter/nvim-treesitter
 - JoosepAlviste/nvim-ts-context-commentstring
 - p00f/nvim-ts-rainbow
