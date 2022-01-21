@@ -54,11 +54,20 @@ return packer.startup({
       after = 'nvim-base16',
     })
 
+    -- statusline
+    use({
+      'nvim-lualine/lualine.nvim',
+      config = function()
+        require('vima.plugins.lualine')
+      end,
+      after = 'nvim-notify',
+    })
+
     -- which-key shows possible keys
     use({
       'folke/which-key.nvim',
       config = function()
-        require('vima.plugins.whichkey')
+        require('vima.plugins.which-key')
       end,
       after = 'nvim-notify',
     })
