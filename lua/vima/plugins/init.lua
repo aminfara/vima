@@ -91,6 +91,26 @@ return packer.startup({
       after = { 'which-key.nvim' },
     })
 
+    -- terminal management
+    use({
+      'akinsho/toggleterm.nvim',
+      config = function()
+        require('vima.plugins.toggleterm')
+      end,
+      after = { 'which-key.nvim' },
+    })
+
+    use({
+      'tknightz/telescope-termfinder.nvim',
+      config = function()
+        local present, telescope = pcall(require, 'telescope')
+        if present then
+          telescope.load_extension('termfinder')
+        end
+      end,
+      after = { 'telescope.nvim', 'toggleterm.nvim' },
+    })
+
     -- Automatically set up your configuration after cloning packer.nvim
     if PACKER_BOOTSTRAP then
       vim.cmd('hi clear Pmenu')

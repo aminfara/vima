@@ -19,14 +19,22 @@ telescope.setup({
         ['<C-p>'] = actions.cycle_history_prev,
         ['<C-j>'] = actions.move_selection_next,
         ['<C-k>'] = actions.move_selection_previous,
-        ['<C-h>'] = actions.which_key,
       },
       n = {
         ['<C-c>'] = actions.close,
-        ['<C-h>'] = actions.which_key,
       },
     },
   },
   pickers = {},
-  extensions = {},
+  extensions = {
+    termfinder = {
+      mappings = {
+        rename_term = '<C-n>',
+        delete_term = '<C-x>',
+        vertical_term = '<C-v>',
+        horizontal_term = '<C-h>',
+        float_term = '<C-f>',
+      },
+    },
+  },
 })

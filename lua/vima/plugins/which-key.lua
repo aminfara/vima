@@ -82,10 +82,8 @@ M.setup_core_mappings = function()
 
   which_key.register({
     -- back to normal mode
-    ['jj'] = { '<Esc>', 'Normal mode' },
     ['jk'] = { '<Esc>', 'Normal mode' },
     ['kj'] = { '<Esc>', 'Normal mode' },
-    ['kk'] = { '<Esc>', 'Normal mode' },
 
     --better movements
     ['<C-h>'] = { '<Left>', 'Move left' },
@@ -113,8 +111,8 @@ M.setup_plugin_mappings = function()
   which_key.register({
     -- leader mappings
     ['<leader>'] = {
-      t = { -- TODO: Add LSP finders
-        name = 'Telescope',
+      f = { -- TODO: Add LSP finders
+        name = 'Find',
         b = { '<Cmd>Telescope buffers<CR>', 'Buffers' },
         c = { '<Cmd>Telescope command_history<CR>', 'Command history' },
         C = { '<Cmd>Telescope commands<CR>', 'Commands' },
@@ -127,7 +125,7 @@ M.setup_plugin_mappings = function()
         R = { '<Cmd>Telescope oldfiles<CR>', 'Recent file' },
         r = { '<Cmd>Telescope registers<CR>', 'Registers' },
         s = { '<Cmd>Telescope git_status<CR>', 'Git status' },
-        t = { '<Cmd>Telescope<CR>', 'Telescope' },
+        T = { '<Cmd>Telescope<CR>', 'Telescope' },
       },
     },
   }, { mode = 'n' })
@@ -147,7 +145,7 @@ M.setup_gitsigns_mappings = function(gs, bufnr)
     -- Actions
     ['<leader>'] = {
       g = {
-        name = 'git',
+        name = 'Git',
         b = {
           function()
             gs.blame_line({ full = true })
@@ -182,6 +180,36 @@ M.setup_gitsigns_mappings = function(gs, bufnr)
   which_key.register({
     ['ih'] = { ':<C-U>Gitsigns select_hunk<CR>', 'git hunk' },
   }, { mode = 'v' })
+end
+
+M.setup_toggleterm_mappings = function(terminals)
+  local opts = { noremap = true }
+  vim.api.nvim_set_keymap('t', 'jk', [[<C-\><C-n>]], opts)
+  vim.api.nvim_set_keymap('t', '<C-h>', [[<C-\><C-n><C-W>h]], opts)
+  vim.api.nvim_set_keymap('t', '<C-j>', [[<C-\><C-n><C-W>j]], opts)
+  vim.api.nvim_set_keymap('t', '<C-k>', [[<C-\><C-n><C-W>k]], opts)
+  vim.api.nvim_set_keymap('t', '<C-l>', [[<C-\><C-n><C-W>l]], opts)
+
+  local terminal_mappings = {
+    name = 'Terminal',
+    ['1'] = { '<Cmd>1ToggleTerm<CR>', 'Toggle main terminal (1)' },
+    ['2'] = { '<Cmd>2ToggleTerm<CR>', 'Toggle second terminal' },
+    ['3'] = { '<Cmd>3ToggleTerm<CR>', 'Toggle third terminal' },
+    ['4'] = { '<Cmd>4ToggleTerm<CR>', 'Toggle forth terminal' },
+    t = { '<Cmd>1ToggleTerm<CR>', 'Toggle main terminal (1)' },
+    a = { '<Cmd>ToggleTermToggleAll<CR>', 'Toggle all terminals' },
+    f = { '<Cmd>Telescope termfinder find<CR>', 'Find' },
+  }
+
+  terminal_mappings = vim.tbl_deep_extend('force', terminal_mappings, terminals)
+
+  which_key.register({
+    ['<C-t>'] = 'ToggleTerm', -- Add a label to toggleterm trigger
+    ['<leader>'] = {
+      ['ft'] = { '<Cmd>Telescope termfinder find<CR>', 'Terminals' },
+      t = terminal_mappings,
+    },
+  }, { mode = 'n' })
 end
 
 return M

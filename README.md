@@ -12,6 +12,7 @@ My attempt to setup Neovim for python and typescript development.
 - [which-key.nvim](https://github.com/folke/which-key.nvim) show keybindings
 - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) fuzzy finder
 - [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim) git management and signs
+- [toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim) terminal management (+ telescope support [telescope-termfinder.nvim](https://github.com/tknightz/telescope-termfinder.nvim))
 
 ## To be added
 
@@ -19,7 +20,6 @@ My attempt to setup Neovim for python and typescript development.
 - kyazdani42/nvim-tree.lua
 - glepnir/dashboard-nvim
 - goolord/alpha-nvim
-- akinsho/toggleterm.nvim
 - norcalli/nvim-colorizer.lua
 - nvim-lua/popup.nvim
 - nvim-treesitter/nvim-treesitter
