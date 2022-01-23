@@ -67,7 +67,8 @@ return packer.startup({
     use({
       'folke/which-key.nvim',
       config = function()
-        require('vima.plugins.which-key')
+        require('vima.plugins.which-key').setup_core_mappings()
+        require('vima.plugins.which-key').setup_plugin_mappings()
       end,
       after = 'nvim-notify',
     })
@@ -77,6 +78,15 @@ return packer.startup({
       'nvim-telescope/telescope.nvim',
       config = function()
         require('vima.plugins.telescope')
+      end,
+      after = { 'which-key.nvim' },
+    })
+
+    -- git management and signs
+    use({
+      'lewis6991/gitsigns.nvim',
+      config = function()
+        require('vima.plugins.gitsigns')
       end,
       after = { 'which-key.nvim' },
     })

@@ -4,6 +4,8 @@ if not present then
   return
 end
 
+-- TODO: hide, show on specific filetypes
+
 lualine.setup({
   options = {
     section_separators = { left = ' ', right = ' ' },

@@ -11,22 +11,33 @@ My attempt to setup Neovim for python and typescript development.
 - [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim) status line
 - [which-key.nvim](https://github.com/folke/which-key.nvim) show keybindings
 - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) fuzzy finder
+- [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim) git management and signs
 
 ## To be added
 
+- ahmedkhalf/project.nvim
+- kyazdani42/nvim-tree.lua
+- glepnir/dashboard-nvim
+- goolord/alpha-nvim
+- akinsho/toggleterm.nvim
+- norcalli/nvim-colorizer.lua
 - nvim-lua/popup.nvim
 - nvim-treesitter/nvim-treesitter
 - JoosepAlviste/nvim-ts-context-commentstring
 - p00f/nvim-ts-rainbow
-- romgrk/barbar.nvim
-- lewis6991/gitsigns.nvim
-- kyazdani42/nvim-tree.lua
-- ahmedkhalf/project.nvim
+- andymass/vim-matchup
+- windwp/nvim-autopairs
+- numToStr/Comment.nvim
+- lukas-reineke/indent-blankline.nvim
+- romgrk/barbar.nvim ? bufferline
+- akinsho/bufferline.nvim ?
+- moll/vim-bbye
 - mfussenegger/nvim-dap
 - hrsh7th/cmp-nvim-lsp
 - hrsh7th/cmp-buffer
 - hrsh7th/cmp-path
 - hrsh7th/cmp-cmdline
+- hrsh7th/cmp-nvim-lua
 - saadparwaiz1/cmp_luasnip
 - L3MON4D3/LuaSnip
 - rafamadriz/friendly-snippets
@@ -34,24 +45,11 @@ My attempt to setup Neovim for python and typescript development.
 - neovim/nvim-lspconfig
 - folke/lua-dev.nvim
 - ray-x/lsp_signature.nvim
+- antoinemadec/FixCursorHold.nvim
 - williamboman/nvim-lsp-installer
 - jose-elias-alvarez/null-ls.nvim
-- windwp/nvim-autopairs
-- numToStr/Comment.nvim
 - akinsho/bufferline.nvim
-- moll/vim-bbye
-- akinsho/toggleterm.nvim
-- ahmedkhalf/project.nvim
 - lewis6991/impatient.nvim
-- lukas-reineke/indent-blankline.nvim
-- goolord/alpha-nvim
-- antoinemadec/FixCursorHold.nvim
-- akinsho/bufferline.nvim ?
-- norcalli/nvim-colorizer.lua
-- andymass/vim-matchup
-- max397574/better-escape.nvim
-- hrsh7th/cmp-nvim-lua
-- glepnir/dashboard-nvim
 
 ## Languages to be supported
 
@@ -60,3 +58,4 @@ My attempt to setup Neovim for python and typescript development.
 - Typescript + tsx
 - Python
 - JSON
+- HTML
