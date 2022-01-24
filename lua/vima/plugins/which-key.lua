@@ -109,8 +109,16 @@ M.setup_plugin_mappings = function()
   end
 
   which_key.register({
+    -- trigger which_key
+    ['<C-_>'] = { '<Cmd>WhichKey<CR>', 'Trigger which-key' },
+
     -- leader mappings
     ['<leader>'] = {
+      e = {
+        name = 'File tree',
+        e = { '<Cmd>NvimTreeToggle<CR>', 'Toggle file tree' },
+        f = { '<Cmd>NvimTreeFocus<CR>', 'Focus file tree' },
+      },
       f = { -- TODO: Add LSP finders
         name = 'Find',
         b = { '<Cmd>Telescope buffers<CR>', 'Buffers' },

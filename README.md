@@ -29,10 +29,10 @@ My attempt to setup Neovim for python and typescript development.
 - [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim) git management and signs
 - [toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim) terminal management (+ telescope support [telescope-termfinder.nvim](https://github.com/tknightz/telescope-termfinder.nvim))
 - [alpha-nvim](https://github.com/goolord/alpha-nvim) dashboard
+- [nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua) file tree
 
 ## To be added
 
-- kyazdani42/nvim-tree.lua
 - ahmedkhalf/project.nvim
 - norcalli/nvim-colorizer.lua
 - nvim-lua/popup.nvim

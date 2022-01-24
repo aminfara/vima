@@ -120,6 +120,15 @@ return packer.startup({
       after = 'nvim-notify',
     })
 
+    -- file explorer
+    use({
+      'kyazdani42/nvim-tree.lua',
+      config = function()
+        require('vima.plugins.nvim-tree')
+      end,
+      after = 'nvim-notify',
+    })
+
     -- Automatically set up your configuration after cloning packer.nvim
     if PACKER_BOOTSTRAP then
       vim.cmd('hi clear Pmenu')

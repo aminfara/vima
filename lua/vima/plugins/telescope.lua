@@ -22,6 +22,7 @@ telescope.setup({
       },
       n = {
         ['<C-c>'] = actions.close,
+        ['<C-_>'] = actions.which_key,
       },
     },
   },

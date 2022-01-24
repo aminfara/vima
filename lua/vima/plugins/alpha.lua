@@ -26,7 +26,11 @@ local default_header = {
 
 local footer = {
   type = 'text',
-  val = 'https://github.com/aminfara/vima',
+  val = {
+    [[https://github.com/aminfara/vima]],
+    [[                                ]],
+    [[         Try <C-/>              ]],
+  },
   opts = {
     position = 'center',
     hl = 'Number',
@@ -66,11 +70,12 @@ end
 local buttons = {
   type = 'group',
   val = {
-    button('e', '  New file', '<cmd>ene <CR>'),
+    button('e', '  New file', '<Cmd>ene <CR>'),
     -- TODO: add projects
     button('SPC f f', '  Find file'),
     button('SPC f r', '  Recently opened files'),
     button('SPC f g', '  Find word'),
+    button('q', '  Exit vima', '<Cmd>q<CR>'),
   },
   opts = {
     spacing = 1,
