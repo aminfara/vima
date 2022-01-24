@@ -31,12 +31,10 @@ My attempt to setup Neovim for python and typescript development.
 - [alpha-nvim](https://github.com/goolord/alpha-nvim) dashboard
 - [nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua) file tree
 - [project.nvim](https://github.com/ahmedkhalf/project.nvim) project management
+- [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) treesitter
 
 ## To be added
 
-- norcalli/nvim-colorizer.lua
-- nvim-lua/popup.nvim
-- nvim-treesitter/nvim-treesitter
 - JoosepAlviste/nvim-ts-context-commentstring
 - p00f/nvim-ts-rainbow
 - andymass/vim-matchup
@@ -63,6 +61,8 @@ My attempt to setup Neovim for python and typescript development.
 - williamboman/nvim-lsp-installer
 - jose-elias-alvarez/null-ls.nvim
 - lewis6991/impatient.nvim
+- norcalli/nvim-colorizer.lua
+- nvim-lua/popup.nvim
 
 ## Languages to be supported
 

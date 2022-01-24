@@ -137,7 +137,20 @@ M.setup_plugin_mappings = function()
         T = { '<Cmd>Telescope<CR>', 'Telescope' },
       },
     },
+
+    -- treesitter incremental select
+    ['gnn'] = 'Init incremental select',
   }, { mode = 'n' })
+
+  which_key.register({
+    -- treesitter incremental select
+    ['gr'] = {
+      name = 'Incremental select',
+      n = 'Increase node select',
+      m = 'Decrease node select',
+      c = 'Increase scope select',
+    },
+  }, { mode = 'v' })
 end
 
 M.setup_gitsigns_mappings = function(gs, bufnr)

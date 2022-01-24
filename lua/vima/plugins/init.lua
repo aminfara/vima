@@ -138,6 +138,17 @@ return packer.startup({
       after = { 'telescope.nvim', 'nvim-tree.lua' },
     })
 
+    -- Treesitter syntax support
+    use({
+      'nvim-treesitter/nvim-treesitter',
+      run = ':TSUpdate',
+      config = function()
+        require('vima.plugins.treesitter')
+      end,
+      event = 'BufRead',
+      after = 'nvim-notify',
+    })
+
     -- Automatically set up your configuration after cloning packer.nvim
     if PACKER_BOOTSTRAP then
       vim.cmd('hi clear Pmenu')
