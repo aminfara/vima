@@ -111,6 +111,15 @@ return packer.startup({
       after = { 'telescope.nvim', 'toggleterm.nvim' },
     })
 
+    -- init screen dashboard
+    use({
+      'goolord/alpha-nvim',
+      config = function()
+        require('vima.plugins.alpha')
+      end,
+      after = 'nvim-notify',
+    })
+
     -- Automatically set up your configuration after cloning packer.nvim
     if PACKER_BOOTSTRAP then
       vim.cmd('hi clear Pmenu')

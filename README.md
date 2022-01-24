@@ -1,3 +1,18 @@
+```
+
+                 
+             /   /
+            /   /  
+  __    _ __\_  \___    __  ____
+ \  \  //|    ||    \  /  ||    \
+  \  \// |    ||     \/   ||     \
+   \__/  |____||__/\__/|__||__|\__\
+           /  /
+          / /
+         //
+        /
+```
+
 # vima
 
 My attempt to setup Neovim for python and typescript development.
@@ -13,13 +28,12 @@ My attempt to setup Neovim for python and typescript development.
 - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) fuzzy finder
 - [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim) git management and signs
 - [toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim) terminal management (+ telescope support [telescope-termfinder.nvim](https://github.com/tknightz/telescope-termfinder.nvim))
+- [alpha-nvim](https://github.com/goolord/alpha-nvim) dashboard
 
 ## To be added
 
-- ahmedkhalf/project.nvim
 - kyazdani42/nvim-tree.lua
-- glepnir/dashboard-nvim
-- goolord/alpha-nvim
+- ahmedkhalf/project.nvim
 - norcalli/nvim-colorizer.lua
 - nvim-lua/popup.nvim
 - nvim-treesitter/nvim-treesitter
@@ -48,7 +62,6 @@ My attempt to setup Neovim for python and typescript development.
 - antoinemadec/FixCursorHold.nvim
 - williamboman/nvim-lsp-installer
 - jose-elias-alvarez/null-ls.nvim
-- akinsho/bufferline.nvim
 - lewis6991/impatient.nvim
 
 ## Languages to be supported
