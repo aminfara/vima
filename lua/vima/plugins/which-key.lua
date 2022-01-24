@@ -129,6 +129,7 @@ M.setup_plugin_mappings = function()
         g = { '<Cmd>Telescope live_grep<CR>', 'Grep' },
         h = { '<Cmd>Telescope help_tags<CR>', 'Help tags' },
         j = { '<Cmd>Telescope jumplist<CR>', 'Jump list' },
+        p = { '<Cmd>Telescope projects<CR>', 'Projects' },
         q = { '<Cmd>Telescope quickfix<CR>', 'Quickfix' },
         r = { '<Cmd>Telescope oldfiles<CR>', 'Recent file' },
         R = { '<Cmd>Telescope registers<CR>', 'Registers' },

@@ -129,6 +129,15 @@ return packer.startup({
       after = 'nvim-notify',
     })
 
+    -- project manager
+    use({
+      'ahmedkhalf/project.nvim',
+      config = function()
+        require('vima.plugins.project')
+      end,
+      after = { 'telescope.nvim', 'nvim-tree.lua' },
+    })
+
     -- Automatically set up your configuration after cloning packer.nvim
     if PACKER_BOOTSTRAP then
       vim.cmd('hi clear Pmenu')

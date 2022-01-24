@@ -71,8 +71,8 @@ local buttons = {
   type = 'group',
   val = {
     button('e', '  New file', '<Cmd>ene <CR>'),
-    -- TODO: add projects
     button('SPC f f', '  Find file'),
+    button('SPC f p', '  Recent Projects'),
     button('SPC f r', '  Recently opened files'),
     button('SPC f g', '  Find word'),
     button('q', '  Exit vima', '<Cmd>q<CR>'),
