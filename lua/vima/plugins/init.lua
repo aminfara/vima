@@ -179,6 +179,15 @@ return packer.startup({
       end,
     })
 
+    -- indent blank lines
+    use({
+      'lukas-reineke/indent-blankline.nvim',
+      config = function()
+        require('vima.plugins.indent-blankline')
+      end,
+      after = 'nvim-treesitter',
+    })
+
     -- Automatically set up your configuration after cloning packer.nvim
     if PACKER_BOOTSTRAP then
       vim.cmd('hi clear Pmenu')
