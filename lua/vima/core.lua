@@ -51,3 +51,6 @@ opt.wildignore = 'build,.svn,CVS,.git,.hg,*.o,*.a,*.class,*.mo,*.la,*.so,*.obj,*
 opt.wildmode = 'longest,full'
 opt.wrap = false
 opt.writebackup = false
+
+-- disable bundled plugins
+vim.g.loaded_matchit = 1

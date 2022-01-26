@@ -138,12 +138,18 @@ return packer.startup({
       after = { 'telescope.nvim', 'nvim-tree.lua' },
     })
 
+    use({
+      'andymass/vim-matchup',
+      event = 'BufRead',
+      after = 'nvim-notify',
+    })
+
     -- Treesitter syntax support
     use({
       'nvim-treesitter/nvim-treesitter',
       run = ':TSUpdate',
       event = 'BufRead',
-      after = 'nvim-notify',
+      after = { 'nvim-notify', 'vim-matchup' },
     })
 
     use({

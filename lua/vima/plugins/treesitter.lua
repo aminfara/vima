@@ -4,11 +4,10 @@ if not present then
   return
 end
 
--- TODO: key mappings
 -- TODO: Folds, Locals, Indents, Injections
--- TODO: commenting
 vim.opt.foldmethod = 'expr'
 vim.opt.foldexpr = 'nvim_treesitter#foldexpr()'
+vim.g.matchup_matchparen_offscreen = { method = 'popup' }
 
 ts_configs.setup({
   ensure_installed = require('vima.languages').get_treesitter_languages(),
@@ -27,6 +26,9 @@ ts_configs.setup({
     enable_autocmd = false,
   },
   rainbow = {
+    enable = true,
+  },
+  matchup = {
     enable = true,
   },
   textobjects = {

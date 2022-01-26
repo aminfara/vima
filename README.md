@@ -34,14 +34,13 @@ My attempt to setup Neovim for python and typescript development.
 - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) treesitter
   - [nvim-treesitter-textobjects](https://github.com/nvim-treesitter/nvim-treesitter-textobjects) text-objects
   - [nvim-ts-context-commentstring](https://github.com/JoosepAlviste/nvim-ts-context-commentstring) comment strings
-  - [nvim-ts-rainbow](https://github.com/JoosepAlviste/p00f/nvim-ts-rainbow) rainbow brackets
+  - [nvim-ts-rainbow](https://github.com/p00f/nvim-ts-rainbow) rainbow brackets
 - [Comment.nvim](https://github.com/numToStr/Comment.nvim) commenting with treesitter support
-
+- [vim-matchup](https://github.com/andymass/vim-matchup) improved matchit
 
 ## To be added
 
 - windwp/nvim-autopairs
-- andymass/vim-matchup
 - lukas-reineke/indent-blankline.nvim
 - romgrk/barbar.nvim ? bufferline
 - akinsho/bufferline.nvim ?
