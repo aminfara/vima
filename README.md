@@ -32,13 +32,14 @@ My attempt to setup Neovim for python and typescript development.
 - [nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua) file tree
 - [project.nvim](https://github.com/ahmedkhalf/project.nvim) project management
 - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) treesitter
+  - [nvim-treesitter-textobjects](https://github.com/nvim-treesitter/nvim-treesitter-textobjects) text-objects
 
 ## To be added
 
 - JoosepAlviste/nvim-ts-context-commentstring
 - p00f/nvim-ts-rainbow
-- andymass/vim-matchup
 - windwp/nvim-autopairs
+- andymass/vim-matchup
 - numToStr/Comment.nvim
 - lukas-reineke/indent-blankline.nvim
 - romgrk/barbar.nvim ? bufferline

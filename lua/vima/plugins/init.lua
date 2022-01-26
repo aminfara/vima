@@ -142,11 +142,16 @@ return packer.startup({
     use({
       'nvim-treesitter/nvim-treesitter',
       run = ':TSUpdate',
+      event = 'BufRead',
+      after = 'nvim-notify',
+    })
+
+    use({
+      'nvim-treesitter/nvim-treesitter-textobjects',
       config = function()
         require('vima.plugins.treesitter')
       end,
-      event = 'BufRead',
-      after = 'nvim-notify',
+      after = 'nvim-treesitter',
     })
 
     -- Automatically set up your configuration after cloning packer.nvim

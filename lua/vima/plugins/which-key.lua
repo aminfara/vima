@@ -136,11 +136,48 @@ M.setup_plugin_mappings = function()
         s = { '<Cmd>Telescope git_status<CR>', 'Git status' },
         T = { '<Cmd>Telescope<CR>', 'Telescope' },
       },
+      s = {
+        name = 'Treesitter',
+        i = { '<Cmd>TSInstallInfo<CR>', 'Install info' },
+        c = { '<Cmd>TSConfigInfo<CR>', 'Config info' },
+        u = { '<Cmd>TSUpdate<CR>', 'Update parsers' },
+        h = { '<Cmd>TSBufToggle highlight<CR>', 'Toggle highlights' },
+      },
     },
 
     -- treesitter incremental select
     ['gnn'] = 'Init incremental select',
+
+    -- treesitter text_objects movements
+    [']b'] = 'Next block start',
+    [']m'] = 'Next method start',
+    [']]'] = 'Next class start',
+    [']B'] = 'Next block end',
+    [']M'] = 'Next method end',
+    [']['] = 'Next class end',
+    ['[b'] = 'Previous block start',
+    ['[m'] = 'Previous method start',
+    ['[['] = 'Previous class start',
+    ['[B'] = 'Previous block end',
+    ['[M'] = 'Previous method end',
+    ['[]'] = 'Previous class end',
   }, { mode = 'n' })
+
+  which_key.register({
+    -- treesitter text_objects
+    ['ab'] = 'outer block',
+    ['ib'] = 'inner block',
+    ['ac'] = 'outer class',
+    ['ic'] = 'inner class',
+    ['a/'] = 'comment',
+    ['i/'] = 'comment',
+    ['ai'] = 'outer conditional',
+    ['ii'] = 'inner conditional',
+    ['af'] = 'outer function',
+    ['if'] = 'inner function',
+    ['al'] = 'outer loop',
+    ['il'] = 'inner loop',
+  }, { mode = 'o' })
 
   which_key.register({
     -- treesitter incremental select
@@ -150,6 +187,19 @@ M.setup_plugin_mappings = function()
       m = 'Decrease node select',
       c = 'Increase scope select',
     },
+    -- treesitter text_objects
+    ['ab'] = 'outer block',
+    ['ib'] = 'inner block',
+    ['ac'] = 'outer class',
+    ['ic'] = 'inner class',
+    ['a/'] = 'comment',
+    ['i/'] = 'comment',
+    ['ai'] = 'outer conditional',
+    ['ii'] = 'inner conditional',
+    ['af'] = 'outer function',
+    ['if'] = 'inner function',
+    ['al'] = 'outer loop',
+    ['il'] = 'inner loop',
   }, { mode = 'v' })
 end
 
@@ -197,10 +247,12 @@ M.setup_gitsigns_mappings = function(gs, bufnr)
   -- Text object
   which_key.register({
     ['ih'] = { ':<C-U>Gitsigns select_hunk<CR>', 'git hunk' },
+    ['ah'] = { ':<C-U>Gitsigns select_hunk<CR>', 'git hunk' },
   }, { mode = 'o' })
 
   which_key.register({
     ['ih'] = { ':<C-U>Gitsigns select_hunk<CR>', 'git hunk' },
+    ['ah'] = { ':<C-U>Gitsigns select_hunk<CR>', 'git hunk' },
   }, { mode = 'v' })
 end
 
