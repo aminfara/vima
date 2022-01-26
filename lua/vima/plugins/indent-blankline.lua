@@ -5,12 +5,14 @@ if not present then
 end
 
 vim.opt.termguicolors = true
-vim.cmd([[highlight! link IndentBlanklineIndent1 SpecialKey]])
+vim.cmd([[highlight! link IndentBlanklineIndent1 NonText]])
 
 indent_blankline.setup({
+  char = '┊',
   char_highlight_list = {
     'IndentBlanklineIndent1',
   },
   show_current_context = true,
   show_current_context_start = true,
+  filetype_exclude = { 'alpha', 'NvimTree' },
 })

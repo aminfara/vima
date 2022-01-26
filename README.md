@@ -41,26 +41,26 @@ My attempt to setup Neovim for python and typescript development.
 
 ## To be added
 
+- hrsh7th/cmp-buffer
+- hrsh7th/cmp-path
+- hrsh7th/cmp-cmdline
+- L3MON4D3/LuaSnip
+- rafamadriz/friendly-snippets
+- hrsh7th/nvim-cmp
+- saadparwaiz1/cmp_luasnip
 - windwp/nvim-autopairs
 - romgrk/barbar.nvim ? bufferline
 - akinsho/bufferline.nvim ?
 - moll/vim-bbye
-- mfussenegger/nvim-dap
+- williamboman/nvim-lsp-installer
 - hrsh7th/cmp-nvim-lsp
-- hrsh7th/cmp-buffer
-- hrsh7th/cmp-path
-- hrsh7th/cmp-cmdline
 - hrsh7th/cmp-nvim-lua
-- saadparwaiz1/cmp_luasnip
-- L3MON4D3/LuaSnip
-- rafamadriz/friendly-snippets
-- hrsh7th/nvim-cmp
 - neovim/nvim-lspconfig
-- folke/lua-dev.nvim
 - ray-x/lsp_signature.nvim
 - antoinemadec/FixCursorHold.nvim
-- williamboman/nvim-lsp-installer
+- folke/lua-dev.nvim
 - jose-elias-alvarez/null-ls.nvim
+- mfussenegger/nvim-dap
 - lewis6991/impatient.nvim
 - norcalli/nvim-colorizer.lua
 - nvim-lua/popup.nvim
