@@ -214,6 +214,20 @@ M.setup_gitsigns_mappings = function(gs, bufnr)
     ['[c'] = { "&diff ? '[c' : '<Cmd>Gitsigns prev_hunk<CR>'", 'Previous git hunk', expr = true },
     [']c'] = { "&diff ? ']c' : '<Cmd>Gitsigns next_hunk<CR>'", 'Next git hunk', expr = true },
 
+    g = {
+      b = {
+        name = 'Block comment',
+        c = 'Current line',
+      },
+      c = {
+        name = 'Line comment',
+        A = 'Add end of line',
+        c = 'Current line',
+        o = 'Add next line',
+        O = 'Add prev line',
+      },
+    },
+
     -- Actions
     ['<leader>'] = {
       g = {
@@ -253,6 +267,10 @@ M.setup_gitsigns_mappings = function(gs, bufnr)
   which_key.register({
     ['ih'] = { ':<C-U>Gitsigns select_hunk<CR>', 'git hunk' },
     ['ah'] = { ':<C-U>Gitsigns select_hunk<CR>', 'git hunk' },
+    g = {
+      b = 'Block comment',
+      c = 'Line comment',
+    },
   }, { mode = 'v' })
 end
 

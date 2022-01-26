@@ -147,11 +147,30 @@ return packer.startup({
     })
 
     use({
+      'p00f/nvim-ts-rainbow', -- Rainbow brackets
+      after = { 'nvim-treesitter' },
+    })
+
+    use({
       'nvim-treesitter/nvim-treesitter-textobjects',
+      after = { 'nvim-ts-rainbow' },
+    })
+
+    use({
+      'JoosepAlviste/nvim-ts-context-commentstring',
       config = function()
         require('vima.plugins.treesitter')
       end,
-      after = 'nvim-treesitter',
+      after = { 'nvim-treesitter-textobjects' },
+    })
+
+    -- context aware commenting
+    use({
+      'numToStr/Comment.nvim',
+      after = { 'nvim-ts-context-commentstring' },
+      config = function()
+        require('vima.plugins.comment')
+      end,
     })
 
     -- Automatically set up your configuration after cloning packer.nvim

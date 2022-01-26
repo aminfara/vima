@@ -22,6 +22,13 @@ ts_configs.setup({
   incremental_selection = {
     enable = true,
   },
+  context_commentstring = {
+    enable = true,
+    enable_autocmd = false,
+  },
+  rainbow = {
+    enable = true,
+  },
   textobjects = {
     select = {
       enable = true,
