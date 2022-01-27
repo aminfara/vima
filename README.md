@@ -1,8 +1,8 @@
 ```
 
-                 
+
              /   /
-            /   /  
+            /   /
   __    _ __\_  \___    __  ____
  \  \  //|    ||    \  /  ||    \
   \  \// |    ||     \/   ||     \
@@ -46,12 +46,12 @@ My attempt to setup Neovim for python and typescript development.
   - [cmp-nvim-lsp](https://github.com/saadparwaiz1/hrsh7th/cmp-nvim-lsp)
   - [LuaSnip](https://github.com/L3MON4D3/LuaSnip)
   - [friendly-snippets](https://github.com/rafamadriz/friendly-snippets)
+- [nvim-autopairs](https://github.com/windwp/nvim-autopairs) automatically close pairs (), [], ...
 
 ## To be added
 
 - hrsh7th/cmp-nvim-lua
 - folke/lua-dev.nvim
-- windwp/nvim-autopairs
 - romgrk/barbar.nvim ? bufferline
 - akinsho/bufferline.nvim ?
 - moll/vim-bbye

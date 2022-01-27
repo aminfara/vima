@@ -234,6 +234,15 @@ return packer.startup({
       after = { 'nvim-cmp' },
     })
 
+    -- auto paris
+    use({
+      'windwp/nvim-autopairs',
+      config = function()
+        require('vima.plugins.autopairs')
+      end,
+      after = { 'nvim-cmp' },
+    })
+
     -- Automatically set up your configuration after cloning packer.nvim
     if PACKER_BOOTSTRAP then
       vim.cmd('hi clear Pmenu')

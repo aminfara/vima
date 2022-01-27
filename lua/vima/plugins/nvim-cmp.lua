@@ -4,7 +4,7 @@ if not present then
   return
 end
 
-present, luasnip = pcall(require, 'luasnip')
+local present, luasnip = pcall(require, 'luasnip')
 if not present then
   require('vima.utils').notify_missing_plugin('LuaSnip')
   return

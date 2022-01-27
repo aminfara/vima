@@ -4,7 +4,7 @@ if not present then
   return
 end
 
-present, ts_context_commentstring = pcall(require, 'ts_context_commentstring')
+local present, ts_context_commentstring = pcall(require, 'ts_context_commentstring')
 if not present then
   require('vima.utils').notify_missing_plugin('nvim_ts_context_commentstring')
   return
