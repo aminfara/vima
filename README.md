@@ -38,27 +38,27 @@ My attempt to setup Neovim for python and typescript development.
 - [Comment.nvim](https://github.com/numToStr/Comment.nvim) commenting with treesitter support
 - [vim-matchup](https://github.com/andymass/vim-matchup) improved matchit
 - [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim) indent lines
+- [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) completion
+  - [cmp-buffer](https://github.com/hrsh7th/cmp-buffer)
+  - [cmp-path](https://github.com/hrsh7th/cmp-path)
+  - [cmp-cmdline](https://github.com/hrsh7th/cmp-cmdline)
+  - [cmp_luasnip](https://github.com/saadparwaiz1/cmp_luasnip)
+  - [cmp-nvim-lsp](https://github.com/saadparwaiz1/hrsh7th/cmp-nvim-lsp)
+  - [LuaSnip](https://github.com/L3MON4D3/LuaSnip)
+  - [friendly-snippets](https://github.com/rafamadriz/friendly-snippets)
 
 ## To be added
 
-- hrsh7th/cmp-buffer
-- hrsh7th/cmp-path
-- hrsh7th/cmp-cmdline
-- L3MON4D3/LuaSnip
-- rafamadriz/friendly-snippets
-- hrsh7th/nvim-cmp
-- saadparwaiz1/cmp_luasnip
+- hrsh7th/cmp-nvim-lua
+- folke/lua-dev.nvim
 - windwp/nvim-autopairs
 - romgrk/barbar.nvim ? bufferline
 - akinsho/bufferline.nvim ?
 - moll/vim-bbye
 - williamboman/nvim-lsp-installer
-- hrsh7th/cmp-nvim-lsp
-- hrsh7th/cmp-nvim-lua
 - neovim/nvim-lspconfig
 - ray-x/lsp_signature.nvim
 - antoinemadec/FixCursorHold.nvim
-- folke/lua-dev.nvim
 - jose-elias-alvarez/null-ls.nvim
 - mfussenegger/nvim-dap
 - lewis6991/impatient.nvim
