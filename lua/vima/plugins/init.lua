@@ -42,7 +42,7 @@ return packer.startup({
       config = function()
         require('vima.plugins.colorscheme')
       end,
-      event = 'VimEnter',
+      after = { 'nvim-web-devicons' },
     })
 
     -- notifications
@@ -190,13 +190,15 @@ return packer.startup({
 
     -- autocomplete and snippets plugins
     use({
-      'L3MON4D3/LuaSnip',
-      after = { 'nvim-notify' },
+      'rafamadriz/friendly-snippets',
+      module = 'cmp_luasnip',
+      event = 'InsertEnter',
     })
 
     use({
-      'rafamadriz/friendly-snippets',
-      after = { 'nvim-notify' },
+      'L3MON4D3/LuaSnip',
+      requires = 'friendly-snippets',
+      after = 'friendly-snippets',
     })
 
     use({
@@ -235,6 +237,7 @@ return packer.startup({
     -- Automatically set up your configuration after cloning packer.nvim
     if PACKER_BOOTSTRAP then
       vim.cmd('hi clear Pmenu')
+      vim.cmd([[autocmd User PackerComplete execute "PackerLoad nvim-web-devicons alpha-nvim" | q | Alpha]])
       packer.sync()
     end
   end,
