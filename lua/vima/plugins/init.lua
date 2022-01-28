@@ -198,7 +198,7 @@ return packer.startup({
     use({
       'L3MON4D3/LuaSnip',
       requires = 'friendly-snippets',
-      after = 'friendly-snippets',
+      after = 'nvim-notify',
     })
 
     use({
@@ -241,6 +241,38 @@ return packer.startup({
         require('vima.plugins.autopairs')
       end,
       after = { 'nvim-cmp' },
+    })
+
+    -- language servers
+    use({
+      'folke/lua-dev.nvim',
+      ft = { 'lua' },
+      after = 'nvim-notify',
+    })
+
+    use({
+      'neovim/nvim-lspconfig',
+      ft = require('vima.languages').supported_languages,
+      after = 'nvim-notify',
+    })
+
+    use({
+      'ray-x/lsp_signature.nvim',
+      after = 'nvim-lspconfig',
+    })
+
+    use({
+      'williamboman/nvim-lsp-installer',
+      config = function()
+        require('vima.plugins.lsp')
+      end,
+      after = { 'lsp_signature.nvim', 'cmp-nvim-lsp' },
+    })
+
+    -- Fix cursor hold delay
+    use({
+      'antoinemadec/FixCursorHold.nvim',
+      after = 'nvim-notify',
     })
 
     -- Automatically set up your configuration after cloning packer.nvim

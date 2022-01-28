@@ -10,7 +10,7 @@ vim.opt.foldexpr = 'nvim_treesitter#foldexpr()'
 vim.g.matchup_matchparen_offscreen = { method = 'popup' }
 
 ts_configs.setup({
-  ensure_installed = require('vima.languages').get_treesitter_languages(),
+  ensure_installed = require('vima.languages').treesitter_languages,
   sync_install = false,
   highlight = {
     enable = true,

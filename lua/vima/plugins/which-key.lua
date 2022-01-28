@@ -304,4 +304,14 @@ M.setup_toggleterm_mappings = function(terminals)
   }, { mode = 'n' })
 end
 
+M.get_lsp_mappings = function(bufnr)
+  which_key.register({
+    ['gd'] = { '<cmd>lua vim.lsp.buf.definition()<CR>', 'Go to definition' },
+    ['gD'] = { '<cmd>lua vim.lsp.buf.declaration()<CR>', 'Go to declaration' },
+    ['gh'] = { '<cmd>lua vim.lsp.buf.hover({ border = "rounded" })<CR>', 'Hover' },
+    ['gl'] = { '<cmd>lua vim.diagnostic.open_float()<CR>', 'Line diagnostics' },
+    -- TODO: use Telescope for references and diagnostics
+  }, { buffer = bufnr })
+end
+
 return M

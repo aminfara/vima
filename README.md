@@ -47,23 +47,23 @@ My attempt to setup Neovim for python and typescript development.
   - [LuaSnip](https://github.com/L3MON4D3/LuaSnip)
   - [friendly-snippets](https://github.com/rafamadriz/friendly-snippets)
 - [nvim-autopairs](https://github.com/windwp/nvim-autopairs) automatically close pairs (), [], ...
+- [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) language servers
+  - [lua-dev.nvim](https://github.com/folke/lua-dev.nvim)
+  - [nvim-lsp-installer](https://github.com/williamboman/nvim-lsp-installer)
+  - [lsp_signature.nvim](https://github.com/ray-x/lsp_signature.nvim)
+- [FixCursorHold.nvim](https://github.com/antoinemadec/FixCursorHold.nvim) Fix delay in cursor hold
 
 ## To be added
 
-- hrsh7th/cmp-nvim-lua
-- folke/lua-dev.nvim
-- romgrk/barbar.nvim ? bufferline
-- akinsho/bufferline.nvim ?
 - moll/vim-bbye
-- williamboman/nvim-lsp-installer
-- neovim/nvim-lspconfig
-- ray-x/lsp_signature.nvim
-- antoinemadec/FixCursorHold.nvim
 - jose-elias-alvarez/null-ls.nvim
 - mfussenegger/nvim-dap
 - lewis6991/impatient.nvim
 - norcalli/nvim-colorizer.lua
 - nvim-lua/popup.nvim
+- hrsh7th/cmp-nvim-lua ?
+- romgrk/barbar.nvim ? bufferline
+- akinsho/bufferline.nvim ?
 
 ## Languages to be supported
 
