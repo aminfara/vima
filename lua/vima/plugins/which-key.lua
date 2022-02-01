@@ -2,7 +2,7 @@ local M = {}
 
 local present, which_key = pcall(require, 'which-key')
 if not present then
-  require('vima.utils').notify_missing_plugin('which-key.nvim')
+  require('vima.utils').notify_missing('which-key.nvim')
   vim.notify('Key mappings are not loaded', 'error', { title = 'Key mappings' })
 end
 

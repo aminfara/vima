@@ -1,6 +1,6 @@
 local present, toggleterm = pcall(require, 'toggleterm')
 if not present then
-  require('vima.utils').notify_missing_plugin('toggleterm.nvim')
+  require('vima.utils').notify_missing('toggleterm.nvim')
   vim.notify('Key mappings are not loaded', 'error', { title = 'Key mappings' })
 end
 

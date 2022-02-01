@@ -1,6 +1,6 @@
 local present, ts_configs = pcall(require, 'nvim-treesitter.configs')
 if not present then
-  require('vima.utils').notify_missing_plugin('nvim-treesitter')
+  require('vima.utils').notify_missing('nvim-treesitter')
   return
 end
 

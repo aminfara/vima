@@ -1,12 +1,12 @@
 local present, cmp = pcall(require, 'cmp')
 if not present then
-  require('vima.utils').notify_missing_plugin('nvim-cmp')
+  require('vima.utils').notify_missing('nvim-cmp')
   return
 end
 
 local present, luasnip = pcall(require, 'luasnip')
 if not present then
-  require('vima.utils').notify_missing_plugin('LuaSnip')
+  require('vima.utils').notify_missing('LuaSnip')
   return
 end
 

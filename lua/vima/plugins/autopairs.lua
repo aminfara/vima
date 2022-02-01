@@ -1,12 +1,6 @@
-local present, alpha = pcall(require, 'alpha')
-if not present then
-  require('vima.utils').notify_missing_plugin('alpha-nvim')
-  return
-end
-
 local present, npairs = pcall(require, 'nvim-autopairs')
 if not present then
-  require('vima.utils').notify_missing_plugin('nvim-autopairs')
+  require('vima.utils').notify_missing('nvim-autopairs')
   return
 end
 
@@ -24,7 +18,7 @@ local cmp_autopairs = require('nvim-autopairs.completion.cmp')
 
 local present, cmp = pcall(require, 'cmp')
 if not present then
-  require('vima.utils').notify_missing_plugin('nvim-cmp')
+  require('vima.utils').notify_missing('nvim-cmp')
   return
 end
 

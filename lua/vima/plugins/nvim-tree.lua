@@ -1,6 +1,6 @@
 local present, nvim_tree = pcall(require, 'nvim-tree')
 if not present then
-  require('vima.utils').notify_missing_plugin('nvim-tree')
+  require('vima.utils').notify_missing('nvim-tree')
   return
 end
 

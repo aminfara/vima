@@ -1,6 +1,6 @@
 local present, lualine = pcall(require, 'lualine')
 if not present then
-  require('vima.utils').notify_missing_plugin('lualine.nvim')
+  require('vima.utils').notify_missing('lualine.nvim')
   return
 end
 

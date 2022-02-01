@@ -43,4 +43,18 @@ M.get_lsp_configs = function(capabilities, on_attach)
   }
 end
 
+M.get_null_ls_config = function(null_ls)
+  return {
+    null_ls.builtins.formatting.stylua.with({
+      condition = function(utils)
+        if not (vim.fn.executable('stylua') > 0) then
+          require('vima.utils').notify_missing('stylua', 'null-ls.nvim')
+          return false
+        end
+        return true
+      end,
+    }),
+  }
+end
+
 return M

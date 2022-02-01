@@ -1,6 +1,6 @@
 local present, indent_blankline = pcall(require, 'indent_blankline')
 if not present then
-  require('vima.utils').notify_missing_plugin('indent-blankline.nvim')
+  require('vima.utils').notify_missing('indent-blankline.nvim')
   return
 end
 

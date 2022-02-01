@@ -1,6 +1,6 @@
 local present, project = pcall(require, 'project_nvim')
 if not present then
-  require('vima.utils').notify_missing_plugin('project.nvim')
+  require('vima.utils').notify_missing('project.nvim')
   return
 end
 

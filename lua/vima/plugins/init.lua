@@ -262,11 +262,16 @@ return packer.startup({
     })
 
     use({
+      'jose-elias-alvarez/null-ls.nvim',
+      after = { 'nvim-lspconfig' },
+    })
+
+    use({
       'williamboman/nvim-lsp-installer',
       config = function()
         require('vima.plugins.lsp')
       end,
-      after = { 'lsp_signature.nvim', 'cmp-nvim-lsp' },
+      after = { 'lsp_signature.nvim', 'cmp-nvim-lsp', 'null-ls.nvim' },
     })
 
     -- Fix cursor hold delay

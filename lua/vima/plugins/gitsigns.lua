@@ -1,6 +1,6 @@
 local present, gitsigns = pcall(require, 'gitsigns')
 if not present then
-  require('vima.utils').notify_missing_plugin('gitsigns.nvim')
+  require('vima.utils').notify_missing('gitsigns.nvim')
   return
 end
 

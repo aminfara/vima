@@ -9,7 +9,6 @@ if not status_ok then
   end
 end
 
-
 -- https://github.com/RRethy/nvim-base16/issues/32 fix telescope borders
 vim.cmd([[highlight! link TelescopeSelection    Visual]])
 vim.cmd([[highlight! link TelescopeNormal       Normal]])

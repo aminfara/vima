@@ -1,7 +1,8 @@
 local M = {}
 
-M.notify_missing_plugin = function(name)
-  vim.notify('Failed to load plugin ' .. name .. '.', 'warn', { title = name })
+M.notify_missing = function(name, title)
+  title = title or name
+  vim.notify('Could not find ' .. name .. '.', 'warn', { title = title })
 end
 
 M.toggle_quickfix_window = function()

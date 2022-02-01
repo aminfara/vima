@@ -1,18 +1,18 @@
 local present, lsp_installer_servers = pcall(require, 'nvim-lsp-installer.servers')
 if not present then
-  require('vima.utils').notify_missing_plugin('nvim-lsp-installer')
+  require('vima.utils').notify_missing('nvim-lsp-installer')
   return
 end
 
 local present, lsp_signature = pcall(require, 'lsp_signature')
 if not present then
-  require('vima.utils').notify_missing_plugin('lsp_signature.nvim')
+  require('vima.utils').notify_missing('lsp_signature.nvim')
   return
 end
 
 local present, cmp_nvim_lsp = pcall(require, 'cmp_nvim_lsp')
 if not present then
-  require('vima.utils').notify_missing_plugin('cmp-nvim-lsp')
+  require('vima.utils').notify_missing('cmp-nvim-lsp')
   return
 end
 
@@ -110,3 +110,5 @@ for _, lang in pairs(require('vima.languages').supported_languages) do
     end
   end
 end
+
+require('vima.plugins.null-ls')

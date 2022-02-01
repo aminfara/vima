@@ -1,6 +1,6 @@
 local present, telescope = pcall(require, 'telescope')
 if not present then
-  require('vima.utils').notify_missing_plugin('telescope.nvim')
+  require('vima.utils').notify_missing('telescope.nvim')
   return
 end
 

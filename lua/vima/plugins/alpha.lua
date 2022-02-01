@@ -1,6 +1,6 @@
 local present, alpha = pcall(require, 'alpha')
 if not present then
-  require('vima.utils').notify_missing_plugin('alpha-nvim')
+  require('vima.utils').notify_missing('alpha-nvim')
   return
 end
 
