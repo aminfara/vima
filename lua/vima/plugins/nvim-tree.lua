@@ -4,19 +4,13 @@ if not present then
   return
 end
 
-vim.g.nvim_tree_icons = {
-  default = '',
-  symlink = '',
-}
-
-vim.g.nvim_tree_respect_buf_cwd = 1
-
 nvim_tree.setup({
   ignore_ft_on_setup = {
     'startify',
     'dashboard',
     'alpha',
   },
+  respect_buf_cwd = true,
   update_cwd = true,
   update_focused_file = {
     enable = true,
